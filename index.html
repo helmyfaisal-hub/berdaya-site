@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0a1714">
+<meta name="description" content="Berdaya — ruang sejenak untuk menemukan cahaya, hikmah, dan semangat bertumbuh.">
+<title>Berdaya — Setiap hari ada cahaya</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div><div class="glow glow-one" aria-hidden="true"></div><div class="glow glow-two" aria-hidden="true"></div>
+<header class="topbar"><a href="/" class="brand" aria-label="Berdaya home"><span class="brand-symbol">✳</span><span>berdaya<span class="brand-dot">.</span></span></a><div class="top-right"><span class="topline">A LITTLE LIGHT, EVERY DAY</span><button id="openProjects" class="project-pill" aria-label="Buka daftar ruang dan proyek">Jelajahi ruang <span>↗</span></button></div></header>
+<main class="hero">
+<div class="eyebrow"><span class="eyebrow-line"></span><span id="edition">RUANG REFLEKSI</span><span class="eyebrow-line"></span></div>
+<div class="quote-container" id="quoteContainer" aria-live="polite" aria-atomic="true"><div class="quote-mark">“</div><blockquote id="quoteText">Di balik setiap kesulitan, ada kemudahan.</blockquote><div class="quote-subtext" id="arabicText" lang="ar" dir="rtl"></div><div class="attribution"><span class="small-rule"></span><span id="quoteAuthor">QS. Al-Insyirah [94]: 5</span><span class="small-rule"></span></div><p class="quote-note" id="quoteNote"></p></div>
+<div class="below-quote"><div class="category-tabs" aria-label="Pilih jenis kutipan"><button class="tab active" data-filter="all">Semua</button><button class="tab" data-filter="quran">Al-Qur'an</button><button class="tab" data-filter="hadith">Hadis</button><button class="tab" data-filter="wisdom">Kebijaksanaan</button></div><div class="controls"><button id="prev" class="icon-btn" aria-label="Kutipan sebelumnya">←</button><button id="togglePause" class="icon-btn" aria-label="Jeda pergantian kutipan" title="Jeda / lanjutkan">Ⅱ</button><button id="next" class="icon-btn" aria-label="Kutipan selanjutnya">→</button><span class="control-divider"></span><button id="copy" class="icon-btn copy-icon" aria-label="Salin kutipan" title="Salin kutipan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="19" height="19"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg></button></div><div class="timer-area"><span id="timerLabel">BERGANTI DALAM 30 DETIK</span><div class="progress-track"><div id="progress" class="progress-fill"></div></div></div></div>
+</main>
+<footer><div class="footer-left"><span class="sun-mark">✺</span><span>Temukan cahaya. Terus berdaya.</span></div><span class="footer-center">SEJENAK BERHENTI. KEMUDIAN BERTUMBUH.</span><div class="footer-right"><span id="count">01 / 20</span><span class="footer-separator">·</span><button id="sources" class="footer-link">Tentang sumber</button></div></footer>
+<div id="overlay" class="overlay" hidden></div>
+<aside id="projectsPanel" class="side-panel" aria-modal="true" role="dialog" aria-labelledby="panelTitle" hidden><div class="panel-header"><span class="panel-kicker">BERDAYA ECOSYSTEM</span><button class="close-btn" data-close aria-label="Tutup">×</button></div><h2 id="panelTitle">Ruang untuk<br><em>bertumbuh.</em></h2><p class="panel-intro">Kumpulan karya dan inisiatif. Setiap ruang punya cerita, tujuan, dan jalannya sendiri.</p><nav id="projectList" class="project-list" aria-label="Tautan proyek"></nav><p class="panel-footnote">Tautan contoh dapat diubah melalui file <code>projects.js</code>.</p></aside>
+<aside id="sourcesPanel" class="side-panel" aria-modal="true" role="dialog" aria-labelledby="sourcesTitle" hidden><div class="panel-header"><span class="panel-kicker">TRANSPARANSI SUMBER</span><button class="close-btn" data-close aria-label="Tutup">×</button></div><h2 id="sourcesTitle">Kata-kata yang<br><em>bertanggung jawab.</em></h2><p class="panel-intro">Ayat ditampilkan sebagai penggalan makna atau terjemahan ringkas beserta surah dan nomor ayat. Hadis mencantumkan kitab dan nomor rujukan. Kutipan tokoh yang bukan terjemahan harfiah ditandai sebagai parafrasa.</p><p class="panel-intro">Materi awal tersimpan lokal agar tetap muncul tanpa API pihak ketiga. Periksa kembali redaksi terjemahan pada sumber resmi sebelum memperluas pustaka kutipan.</p><div class="source-links"><a href="https://quran.kemenag.go.id/" target="_blank" rel="noopener noreferrer">Al-Qur’an Kemenag ↗</a><a href="https://sunnah.com/" target="_blank" rel="noopener noreferrer">Rujukan kitab hadis ↗</a></div></aside>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="quotes.js"></script><script src="projects.js"></script><script src="app.js"></script>
+</body></html>
